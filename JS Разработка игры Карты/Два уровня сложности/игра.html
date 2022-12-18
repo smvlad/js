@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.ext-container {
+      width: 40%;
+      /*width: 400px;*/
+			margin: 0 auto;
+			/*margin-left: 100px;  так не сдвигается при выборе уровня, а вдругих случаях сдвигается почему-то*/
+			/*margin-left: 10%;*/
+      /* background-color: aqua; */
+			padding-left: 20%;
+		}
+		.gameBox {
+			width: 284px;
+			/*padding-left: 10px;*/
+		}
+    .choice-block {
+      margin-bottom: 20px;
+    }
+
+	</style>
+	<script defer src="решение.js"></script>
+</head>
+<body>
+	<div  class="ext-container">
+		<h1>Тренировка памяти</h1>
+    <div class="choice-block">
+      <h3>Уровень</h3>
+      <!-- <span>&nbsp; &nbsp;&nbsp;&nbsp; Уровень</span> -->
+      <input type="radio" name="level" value="Профи" id="profy">
+	  <label for="profy">Профи</label>	     
+      <input type="radio" name="level" value="Новичок" id="novice">
+      <label for="novice">Новичок</label>	
+    </div>
+		<button class="new-btn" >Новая игра</button>
+		<h3>Ошибок:<span id="wrong"></span></h3>    <!-- span - некий строчный элемент как div - блочный -->
+		<div class="gameBox">
+
+		</div>
+	</div>
+</body>
+</html>

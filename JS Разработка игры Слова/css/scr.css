@@ -1,0 +1,9 @@
+h3,html, select, textarea, button, input{
+	font:20px calibri, sans-serif;
+}
+
+#wrapper {
+	width: 300px;
+	margin: auto;
+	/*background-color: cyan;*/
+}

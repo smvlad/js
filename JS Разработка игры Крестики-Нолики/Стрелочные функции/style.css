@@ -1,0 +1,14 @@
+table {
+	margin: auto;
+	margin-bottom: 2em;
+}
+td {
+	height: 150px;
+	width: 150px;
+	font-size: 120px;
+	background-color: cyan;
+}
+.title_center {
+	text-align: center;
+	font-family: serif;
+}

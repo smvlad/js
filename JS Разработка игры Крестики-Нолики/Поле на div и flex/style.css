@@ -1,0 +1,30 @@
+.clrow {
+    /* width: 75%; */
+    display: flex;
+    background-color: blue;
+    /* flex-wrap: wrap; */
+}
+.clcell {
+    width: 150px;
+    height: 150px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: aqua;
+}
+.clcell:nth-of-type(3n) {
+    margin-right: auto;
+}
+
+.conta {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #8380f0;
+}
+.contain {
+    width: 50%;
+    /* height: 50%; */
+}
+.flex {
+    display: flex;
+}

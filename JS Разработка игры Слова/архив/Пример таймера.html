@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			width: 200px;
+			margin: auto;
+			position: absolute;
+			color: red;
+			color: rgb(200,100,0);
+			animation: a1 5s infinite;
+		}
+		#m1 {
+			animation: a2 2s infinite;
+			/*animation: a2 1s infinite;*/
+
+		}
+		@keyframes a1 {
+			from {
+				color: rgb(255,0,0);
+				top: 0px;
+				left: 0px;
+			}
+			to {
+				top: 400px;
+				left: 500px;
+				color: rgb(0,0,250);
+
+			}
+
+		}
+		@keyframes a2 {
+			from {
+				font-size: 10px;
+				color: rgb(255,255,255);
+			}
+			to {
+				font-size: 30px;
+				color: rgb(0,0,0);
+
+			}
+
+	</style>
+</head>
+<body>
+<div id=m2>
+	<h1>Таймер:<span id="m1"></span></h1>
+</div>
+<script type="text/javascript">
+	let start=10;
+	let ref=document.getElementById('m1');
+	let timer;
+	ref.textContent= start;
+	function changetime() {
+		// if (start<0) return;		
+		if (start==0) {
+			// clearInterval(timer); return;
+			start=10;
+		}		
+
+		ref.textContent=--start;
+	}
+
+	timer=setInterval(changetime,500);
+	
+</script>
+</body>
+</html>

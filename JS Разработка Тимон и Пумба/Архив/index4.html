@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="asset/style.css">
+	<link rel="stylesheet" type="text/css" href="asset/anim.css">
+</head>
+<body>
+	<div class="pole">
+	</div>
+	<div class="start">
+		<div class="starttitle">
+			<table>
+				<tr>
+					<th><img src="../Media/Тимон/timon.png" width = "60px"></th>
+					<th><img src="../Media/Тимон/timon_1.png" width = "60px"> </th>
+					<th><img src="../Media/Пумба/pumbasmile.png" width = "60px"> </th>
+					<th><img src="../Media/Пумба/pumbasmile2.png" width = "60px"> </th>
+				</tr>
+				<tr>
+					<td> <input type="radio" name="Timon" value="bigtim" checked=""></td>
+					<td> <input type="radio" name="Timon" value="smalltim"></td>
+					<td> <input type="radio" name="Pumba" value="bigpum" checked=""></td>
+					<td> <input type="radio" name="Pumba" value="smallpum"></td>
+				</tr>
+			</table>
+		<h1><span>Т</span>имон и Пумба</h1>			
+
+		</div>
+
+		<ol>
+			<li>Для начала игры введите свое имя  и нажмите кнопку старт</li>
+			<li>Для прыжка за гусеницей нажмите стрелку вверх</li>
+
+		</ol>
+		<form id="nameForm" onsubmit="return false;">
+			<input type="text" name="" placeholder="Введите ваше имя" id="m1">
+			<input type="submit" name="" id="m2" disabled>
+
+		</form>
+
+	</div>
+	<div class="nadpis">
+		<div>
+			Имя пользователя: <span id="username"></span>
+		</div>
+		<div >Жизни: <span>100</span></div>
+		<div class="nadpisNiz">Съеденные гусеницы: <span>0</span></div>
+		<div class="nadpisNiz">Таймер: <span>00:00</span></div>
+	</div>
+	<script src="prog.js"></script>
+</body>
+</html>

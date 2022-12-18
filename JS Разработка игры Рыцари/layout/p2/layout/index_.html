@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Orcs vs. Knights</title>
+    <link rel="stylesheet" href="assets/css/base.css"> 
+    <link rel="stylesheet" href="assets/css/anim.css"> 
+</head>
+<body>
+<div class="screen screen-start show">
+    <div class="panel">
+        <h1><span>T</span>he Orcs <span>vs</span>  Knights</h1>
+        <ul>
+            <li>Enter <span>your name</span> and press the start button</li>
+            <li>Go ahead by <span>overcoming</span> the obstacles</li>
+            <li>Destroy the <span>monsters in</span> your path</li>
+            <li>Use the skills to <span>fight</span> monsters</li>
+            <li>Each skill uses MP, but MP <span>regenerates</span> by 5MP/sec</li>
+        </ul>
+        <form onsubmit="return false">
+            <input id="m1" type="text" placeholder="Enter your name, Hero!">
+            <input id="m2" type="submit" value="Next!">
+        </form>
+    </div>
+</div>
+<div class="screen screen-game">
+    <div class="game-panel game-panel-user">
+        <div class="user-info">Username</div>
+        <div class="panel-xp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+        <div class="panel-mp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-panel game-panel-scores">
+        <div class="timer">Time: <span id="time">00:00</span></div>
+        <div class="kills">Killed:<span> 0</span></div>
+    </div>
+
+    <div class="game-panel game-panel-skills">
+        <img src="assets/img/skill-sword.png" alt="sword">
+        <img src="assets/img/skill-shield.png" alt="shield">
+        <img src="assets/img/skill-sword-3.png" alt="sword 3">
+        <img src="assets/img/skill-sword-8.png" alt="sword 8">
+    </div>
+</div>
+<div class="screen screen-ranking">
+    <div class="panel">
+        <h1>Rating of Heroes!</h1>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Username</th>
+                <th>Killed mosters</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Konstantin</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+        </table>
+        <button>Start again!</button>
+    </div>
+</div>
+<script src="prog.js"></script>
+</body>
+</html>

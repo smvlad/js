@@ -1,0 +1,30 @@
+
+#a {
+	width: 500px;
+	margin-left: 400px;
+}
+#box {
+	width: 340px;
+}
+#card1 {
+	top: 200px;
+   	left: 390px;
+	animation: move1 1s;
+	position: fixed;
+}
+.cards {
+	/*top: 200px;*/
+   	left: 400px;
+	animation: move1 1s;
+	position: relative;
+}
+
+@keyframes move1 {
+   from {top: 0px;
+    	left: 0px}
+
+    to {top: 0px;
+    	left: 400px}
+}    	
+}    	
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		img {
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../../карты/1cover.gif">
+	</div>
+<script type="text/javascript">
+	var ref=document.getElementsByTagName('img')[0];
+	ref.style.left="0px";
+	function mi() {
+		let current = ref.style.left;
+		pos = current.indexOf("px");
+		numleft = +current.slice(0,pos);
+		numleft+=1;
+		ref.style.left = numleft+"px";
+	}
+	setInterval(mi,10);	
+
+</script>
+</body>
+</html>

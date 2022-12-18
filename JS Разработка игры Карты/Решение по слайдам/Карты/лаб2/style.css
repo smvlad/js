@@ -1,0 +1,10 @@
+#ext {
+	margin-left: 20%;
+	margin-right: 30%;
+	/* margin: 0 auto; */
+	padding-left: 20%;
+}
+#box {
+	/* width: 100%; */
+	width: 284px;
+}

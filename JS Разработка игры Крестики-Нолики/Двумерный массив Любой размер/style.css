@@ -1,0 +1,18 @@
+table {
+	margin: auto;
+	background-color: cyan;
+}
+td {
+	height: 200px;
+	width: 200px;
+	font-size: 160px;
+}
+.title_center {
+	text-align: center;
+	font-family: serif;
+}
+#btn {
+	margin-top: 5%;
+	font-size: 2em;
+	font-family: inherit;
+}

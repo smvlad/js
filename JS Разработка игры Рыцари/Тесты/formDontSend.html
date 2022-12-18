@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<!-- Показывать лучше в IE -->
+
+	 <!-- return false; -->
+	 <!-- action = "#"  -->
+<!-- Для IE    1. без  action = "#" и return false; всегда обновляется. Плюет на возврат функции refresh()
+				2. с action = "#"  тоже обновляется
+				3. с return false;  не обновляется
+
+Для chrome    1. без  action = "#" и return false; всегда обновляется. Плюет на возврат функции refresh()
+				2. с action = "#"  тоже не обновляется. Но запоминает и потом не обновляется даже при положительном ответе. Нужно закрывать chrome
+				3. с return false;  не обновляется 
+-->
+	<!-- <form onsubmit="refresh(this);">        -->
+
+	<!-- <form onsubmit="return false; refresh(this);">        -->
+		<!-- если return false перед  refresh(this), то refresh не вызывается        -->
+	<!-- <form onsubmit="return false">       				 -->
+		<!-- если только return false , то можно без точки с запятой        -->
+	<!-- <form onsubmit="function () {alert('ff'); return false;} ">               так не работает-->
+
+	<form onsubmit='if (confirm("Обновить форму")) {
+				alert("Ответ обновлять");
+				form.submit();
+				return true;
+			}
+			else {
+				alert("Ответ не обновлять");
+				return false;
+			}'>
+		<input type="text" name="txt">
+		<input type="submit" onclick = "fbtn()" name="">
+		<!-- если вставить в кнопку formaction="p1.html" , то при запуске локально брузером вначале отрабатывает весть диалог (действие формы), 
+			потом переходит на страничку - т.е., отрабатывает formaction   Хотя вроде додна была ПЕРОПРЕДЕЛИТЬ действие формы
+				При запуске с openserver вообще ничего не отрабатывает.
+		-->
+		
+	</form>
+	
+	<h1 id="mh1">Форма обновлена</h1>
+
+	<script>
+		function fbtn() {
+			let refh = document.getElementById('mh1');
+			refh.innerHTML="Кнопка была нажата, форма не обновлена!";
+			alert("задержка в клике кнопки"); 
+		}
+		function refresh(form) {
+			if (confirm("Обновить форму")) {
+				alert("Ответ обновлять");
+				form.submit();
+				return true;
+			}
+			else {
+				alert("Ответ не обновлять");
+				return false;
+			}
+		}
+	</script>
+
+
+</body>
+</html>

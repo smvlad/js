@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	div {
+		width: 100px;
+		margin: auto; 
+	}
+	
+</style>
+</head>
+<body>
+<h1 align="center">Таймер</h1>
+<h1 align="center" id="timer">10</h1>
+<div>
+	<button onclick="start()">Старт</button> <br><br>
+	<button onclick="stop()">Стоп</button>
+</div>
+
+<script type="text/javascript">
+	let number=10;
+	let reftimer=document.getElementById('timer');
+	let ref;
+	function change() {
+		number--;
+		reftimer.textContent=number;
+	}
+	function start() {
+		ref = setInterval(change,1000);
+	}
+	function stop() {
+		clearInterval(ref);
+	}
+</script>
+
+</body>
+</html>

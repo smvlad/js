@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#ext {
+			/*background-color: #ff0;*/
+			margin-left: 10%;
+			margin-right: 10%;
+			padding-left: 20%;
+		}
+		#box {
+			width: 284px;
+		}
+/*		span {
+			display: block;
+		}
+*/
+	</style>
+	<!-- <script src="программа.js"></script>            так не выведется  -->
+	<!-- <script async src="программа5.js"></script>      так выведется, но необязательно    -->
+	
+
+	<!-- <script defer src="init.js"></script> -->
+	<!-- <script defer src="cardclick.js"></script> -->
+	<script defer src="решение.js"></script>    <!-- так выведется точно    -->
+
+
+</head>
+<body>
+	<div id="ext">
+		<h1>Тренировка памяти</h1>
+		<button id="new">Новая игра</button>  
+		<span>&nbsp; &nbsp;&nbsp;&nbsp; Уровень</span>
+		<input type="radio" name="level" value="Профи" id="profy">Профи
+		<input type="radio" name="level" value="Новичок" >Новичок
+
+		
+		<h3>Ошибок:<span id="wrong"></span></h3>    <!-- span - некий строчный элемент как div - блочный -->
+		<div id="box">
+			
+		</div>
+	</div>
+</body>
+</html>

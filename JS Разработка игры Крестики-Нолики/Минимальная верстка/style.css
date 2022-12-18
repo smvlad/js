@@ -1,0 +1,12 @@
+.title_center {
+    text-align: center;
+}
+table {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+td {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}

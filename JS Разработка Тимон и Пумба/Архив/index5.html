@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="asset/style.css">
+	<link rel="stylesheet" type="text/css" href="asset/anim.css">
+</head>
+<body>
+	<div class="pole">
+
+	</div>
+	<div class="start">
+		<h1><span>Т</span>имон и Пумба</h1>
+		<ol>
+			<li>Для начала игры введите свое имя  и нажмите кнопку старт</li>
+			<li>Для прыжка за гусеницей нажмите стрелку вверх</li>
+
+		</ol>
+		<form id="nameForm" onsubmit="return false;">
+			<input type="text" name="" placeholder="Введите ваше имя" id="m1">
+			<input type="submit" name="" id="m2" disabled>
+		</form>
+		<div  id="video">
+			<video  width="100%"  src="../Media/Видео/анимация буквы шаг1_1.mp4" controls>
+			 	<source src="../Media/Видео/анимация буквы шаг1_1.mp4" type="video/mp4">
+				<p>Ваш браузер не поддерживает HTML5 видео.</p> 
+			</video>
+		</div>
+
+
+	</div>
+	<div class="nadpis">
+		<div>
+			Имя пользователя: <span id="username"></span>
+		</div>
+		<div >Жизни: <span>100</span></div>
+		<div class="nadpisNiz">Съеденные гусеницы: <span>0</span></div>
+		<div class="nadpisNiz">Таймер: <span>00:00</span></div>
+	</div>
+	<script src="prog.js"></script>
+</body>
+</html>

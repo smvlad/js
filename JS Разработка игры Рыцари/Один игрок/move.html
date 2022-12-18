@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	div {
+		/*height: 100px;*/
+	}
+	.wrapper {
+		/*position: relative;*/
+		position: absolute;
+		top: 200px;
+		left: 100px;
+		height: 600px;
+		width: 1000px;
+		background-color: #A55;
+	}
+	#dimg {
+		width: 100px;
+		left: 20px;
+		top: 100px;
+		position: absolute;
+		/*position: relative;*/
+		height: 150px;
+		background-color:  pink;
+	}
+	#empty {
+		width: 50%;
+		/*top: -20px;*/
+		/*height: 200px;*/
+		background-color: yellow;
+	}
+			img {
+			/*width: 100%;*/   /* вписывает в размер контейнера */
+			/*position: absolute;*/
+			/*position: relative;*/
+			
+			/*height: 5%;   не влияет. влияет только width */
+			/*height: 100px;  */ /* так влияет*/
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="in" >
+			<div id="dimg">
+				<!--<img src="IDLE_000.png" id="pl1">-->
+			</div>
+			<div id="empty">Идет ниже контейнера с игроком</div>
+		</div>
+	</div>
+<script src="1.js"></script>
+</body>
+</html>

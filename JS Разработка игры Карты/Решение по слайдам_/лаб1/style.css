@@ -1,0 +1,35 @@
+/* #ext {
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 20%;
+} */
+:root {
+	--block_height: 100px;
+}
+body, h1 {
+	margin: 0;
+}
+.flex {
+	display: flex;
+}
+.superext {
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	/* padding-top: calc(50vh - var(--block_height)/2); */
+}
+#box {
+	/* width: 284px; */
+}
+
+#ext {
+	/* height: 100px; */
+}
+.metka {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	outline: 1px solid aqua;
+}
+

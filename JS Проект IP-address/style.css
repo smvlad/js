@@ -1,0 +1,23 @@
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+table {
+	text-align: center;
+	border-collapse: collapse;
+	
+}
+input[type=text] {
+	width: 2em;
+}
+
+.l1 {
+	background-color: #aa5;
+}
+.l2 {
+	background-color: #a5a;
+}
+
+th {
+	font-size: 2em;
+}

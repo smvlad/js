@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+}
+
+
+@font-face {
+    font-family: Roboto-Black;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+body {
+    font-family: Roboto-Black;
+}
+
+.pole {
+	background-image: url("fon.png");
+	height: 100vh;
+	background-size: cover;
+}
+.start {
+	position: absolute;						/*центруем посередине*/
+    left: 50%;                				/*центруем посередине*/
+    top:50%;								/*центруем посередине*/
+    transform: translate(-50%, -50%);    	/*центруем посередине*/ /* смещаем влево и вверх на половину собственной ширины и высоты*/
+
+	width: 500px;
+	background-color: grey;
+
+	border-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 10%;
+	
+	padding: 100px;
+}
+#nameForm {
+	position: relative;
+	top: 20px;
+}
+#nameForm {
+	left: 50%;
+	width: 260px;
+	transform: translate(-50%, 0); 
+}
+
+.nadpis {
+	font-size: 2em;
+	position: absolute;
+	top: 0;
+	color: #ffeeee;
+}
+.nadpisNiz {
+	transform: translate(0,70vh);
+	font-style: bold;
+}
+.starttitle {
+	width: 250px;
+	position: relative;						/*центруем посередине*/
+    left: 50%;                				/*центруем посередине*/
+
+    transform: translate(-50%,0);
+        	/*центруем посередине*/ /* смещаем влево на половину собственной ширины*/
+
+}
+.starttitle td {
+	padding-left: 20px;
+}
+/*#video {
+	position: absolute;
+	transform: translate(0,-50%);
+}
+*/
+
+
+
+

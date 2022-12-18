@@ -1,0 +1,30 @@
+table {
+	margin: auto;
+	background-color: cyan;
+}
+td {
+	height: 150px;
+	width: 150px;
+	font-size: 130px;
+}
+.title_center {
+	text-align: center;
+	font-family: serif;
+}
+#btn {
+	margin-top: 5%;
+	font-size: 2em;
+	font-family: inherit;
+}
+
+/*первая строка green*/
+tr:nth-of-type(1) td {
+	background-color: green;
+}
+
+
+/*первый столбец  red*/
+body td:nth-of-type(1) {               
+	background-color: red;
+}
+

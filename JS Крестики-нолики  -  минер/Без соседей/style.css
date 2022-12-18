@@ -1,0 +1,38 @@
+table {
+	margin: auto;
+	margin-bottom: 20px;
+	background-color: aqua;
+}
+td {
+	height: 150px;
+	width: 150px;
+	font-size: 130px;
+	outline: 1px solid #FFF;
+}
+.sapper {
+	background-image: url('img/река.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.title_center {
+	text-align: center;
+	font-family: serif;
+}
+#btn {
+	font-size: 2em;
+	font-family: inherit;
+}
+.nomine {
+	background-color: #FFF;
+}
+
+.visible_mine {
+	background-image: url('img/мина.jpg');
+	background-size: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.namegame {
+	margin-bottom: 20px;
+}

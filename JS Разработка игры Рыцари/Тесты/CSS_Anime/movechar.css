@@ -1,0 +1,118 @@
+
+/*.movechar {      /* мое */
+/*	background-color: red;
+	margin-top: 400px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
+}*/
+
+/*.movechar {                      
+	background-color: yellow;
+	margin-top: 50%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
+
+}
+*/
+
+
+/****************************************************   способ 1    **********************************************/
+/*div.movechar {
+	background-color: yellow;                        
+   height: 50em;
+   position: relative                 1 Сделайте контейнер относительно позиционированным (position: relative), что превратит его в контейнер для абсолютнопозиционированных элементов
+}              
+  */ 
+/* div.movechar span {                   /*  элементы по вертикали по центру, но буквы накладываются друг на друга*/
+/*   margin: 0;
+   position: absolute;
+*/                  /* 2 Сам элемент сделайте абсолютно позиционированным (position: absolute). */
+   /*top: 50%; */
+                           /* 3 Поместите элемент посередине контейнера с помощью 'top: 50%'.(Заметьте, что '50%' здесь означают 50% высоты контейнера.)*/
+   /*transform: translate(0, -50%);*/
+       /* 4 Используйте translate, чтобы переместить элемент вверх наполовину своей собственной высоты. ( '50%' в 'translate(0, -50%)' указывают на высоту самого элемента.)*/
+/*	font-size: 10em;
+}
+*/
+/****************************************************  конец  способ 1    **********************************************/
+
+/****************************************************   способ 2    использован flex  выравнивание внутри блока **********************************************/
+
+/*div.movechar {
+background-color: yellow;		
+  height: 10em;
+  display: flex;
+  align-items: center;              
+*/
+  						/*align-items: center;   				выравнивает внутренность по центру вертикально*/ 
+  /*justify-content: center;	*/
+						/*justify-content: center;   			выравнивает  внутренность по центру вертикально*/ 				
+/*}*/
+
+/****************************************************  конец  способ 2    использован flex **********************************************/
+
+
+/****************************************************   способ 3    выравнивание блока **********************************************/
+
+.movechar {	
+		background-color: yellow;
+		position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%); 
+        }
+
+span {
+	font-size: 10em;
+}
+
+
+/****************************************************   способ 3    выравнивание блока **********************************************/
+
+
+
+/*                                         анимация                                    */
+.movechar span {
+	opacity: 0;
+	display: inline-block;
+	transform: translate(-400px, 0px);
+	animation: move1 1s forwards; 
+	font-size: 10em;
+}
+
+
+@keyframes move1 {
+	from {
+		transform: translate(-400px, 0px); 
+		
+	}
+	to {
+		transform: translate(0); 
+		opacity: 1;
+
+	}
+
+}
+
+
+
+.movechar span:nth-of-type(5) {
+	animation-delay: .05s;
+}
+.movechar span:nth-of-type(4) {
+	animation-delay: .1s;
+}
+.movechar span:nth-of-type(3) {
+	animation-delay: .15s;
+}
+.movechar span:nth-of-type(2) {
+	animation-delay: .2s;
+}
+.movechar span:nth-of-type(1) {
+	animation-delay: .25s;
+}

@@ -1,0 +1,7 @@
+#sprite {
+	height: 50px;
+	width: 65px;
+	background-image: url("Hyenas.png");
+	background-position: -2px -130px;
+	/*background: url("Hyenas.png") no-repeat;*/
+}

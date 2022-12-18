@@ -1,0 +1,30 @@
+div {
+	background-color: yellow;
+	width: 400px;
+	margin-left: 300px;
+	margin-top: 300px;
+	
+}
+
+
+img {
+	/*display: inline-block;*/
+	animation: n23 1s forwards;
+	position: relative;
+}
+
+@keyframes n23 {
+
+	0% {
+		transform: translate(-200px,-200px);
+		opacity: 0;
+	}
+	50% {
+		transform: translate(0);
+	}
+	100% {
+		transform: translate(0,200px);
+		opacity: 1;
+
+	}
+}
