@@ -1,4 +1,5 @@
-// edited 04.01.2022 on Github
+// изменения для задания 3.6, которые проиндексированы
+// изменения для задания 3.6, которые не проиндексированы
 var refs = document.getElementsByTagName('td');
 var refbtn = document.getElementById('btn');
    //  вначале все клетки пустые
